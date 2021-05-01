@@ -24,5 +24,5 @@ It's a  platform where the client can contact Youtuber for various promotions.
 
 ### Tuber Section   
 
-<img src = "images/tuber_des.png" width =45% height = 40%>    <img src = "images/contact.png" width =45% height = 40%>
+<img src = "images/tuber_des.png" width =50% height = 40%>   <img src = "images/contact.png" width =50% height = 40%>
 
