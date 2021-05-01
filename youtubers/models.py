@@ -8,7 +8,7 @@ class FeaturedTuberManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter(is_featured = True)
 
-
+ 
 
 class Youtuber(models.Model):
 
