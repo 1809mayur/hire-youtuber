@@ -19,7 +19,8 @@ It's a  platform where the client can contact Youtuber for various promotions.
 
 ### Login and Contact Page 
 
-<img src = "images/login.png" width =45% height = 40%>    <img src = "images/contact.png" width =45% height = 40%>
+<img src = "images/login.png"> 
+<img src = "images/contact.png">
 
 ### Tuber Section   
 
