@@ -13,9 +13,9 @@ It's a  platform where the client can contact Youtuber for various promotions.
 
 
 ### Home
-<img src = "images/featured.png" width =45% height = 40%>  <img src = "images/tubers.png" width =45% height = 40%>
+<img src = "images/featured.png"> 
 
-<img src = "images/home.png" width =45% height = 30%>  
+<img src = "images/home.png" >  
 
 ### Login and Contact Page 
 
