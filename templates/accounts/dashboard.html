@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+  <main class="contact-us">
+    <div class="banner">
+      <img src="{% static './assets/images/bg-banner.png' %}" alt="" class="img-fluid w-100">
+      <h1 class="text-center">
+        Dashboard
+      </h1>
+      
+    </div>
+        <div class = "row">
+      <div class = "col-md-4 offset-md-4">
+        {% include 'messages.html' %}
+      </div>
+    </div>
+
+    <section class="container mt-5">
+      <h2 class="text-center">Welcome to Dashboard</h2>
+      <h4 class="text-center text-white-50">
+        hi, {{ user.username }}. Hope you are having a good day
+      </h4>
+ 
+      <div class="table-responsive- mt-3">
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">YTubers_name</th>
+              <th scope="col">City</th>
+              <th scope="col">Visit</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+          {% for hired in unique_tuber %}
+          
+            <tr>  
+              <th scope="row">{{ hired.id }}</th>
+              <td>{{ hired.tuber_name }}</td>
+              <td>{{ hired.city }}</td>
+              <td>
+                <div class="btn btn-accent"><a href ={% url 'youtubers_detail' hired.tuber_id  %} >Go to Page </a></div>
+              </td>
+            </tr>
+         
+          {% endfor %}
+          
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+  </main>
+
+
+
+
+
+{% endblock content %}
