@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vu0&=1g197%6mx745!j#e12z&#=@9i88utzl4&no%n5*&9o2%)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','https://hireyoutuber.herokuapp.com/','0.0.0.0']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
@@ -92,11 +92,12 @@ WSGI_APPLICATION = 'lcotubers.wsgi.application'
 #     # manually to connect with databases.
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'lcotubers',
         'USER': 'postgres',
         'PASSWORD' : 'Mayur@1899',
-        'HOST' : 'localhost',
+        'HOST' : 'db',
+        'PORT' : 5432,
     }
 }
 
